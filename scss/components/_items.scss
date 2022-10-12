@@ -1,0 +1,120 @@
+.item{
+  $x:120;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:100;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+      .home__hesinhthai__section &{
+        margin-top: 40px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
+    }
+  }
+  $x:80;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:60;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+      .home__hesinhthai__section &,
+      .home__quyenloi &{
+        margin-top: 30px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
+    }
+  }
+  $x:50;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:43;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+      .home__tinhnang &{
+        margin-top: 20px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
+    }
+  }
+  $x:40;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:30;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+      .footer__top &,
+      .home__banner &,
+      .home__hinhanh &,
+      .home__tinhnang &{
+        margin-top: 16px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
+    }
+  }
+  $x:24;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+      .home__quyenloi &{
+        margin-top: 10px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
+    }
+  }
+  $x:20;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:16;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:15;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:10;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:8;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+}
