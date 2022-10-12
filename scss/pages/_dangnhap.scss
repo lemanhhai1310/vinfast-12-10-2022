@@ -49,6 +49,11 @@
       font-family: $font-Mulish-SemiBold;
       color: #3C3C3C;
     }
+    &__width{
+      @include media-breakpoint-up('m'){
+        width: 410px;
+      }
+    }
     &__btnSubmit{
       line-height: (52px - 2px);
       min-width: 300px;
@@ -71,6 +76,9 @@
       font-family: $font-Mulish-SemiBold;
       color: #3C3C3C;
       line-height: 1.5;
+      @include media-breakpoint-down('s'){
+        text-align: left;
+      }
     }
     &__txtLink{
       color: #1464F4;

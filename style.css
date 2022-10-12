@@ -982,6 +982,11 @@ body {
   font-family: "Mulish SemiBold", sans-serif;
   color: #3C3C3C;
 }
+@media (min-width: 960px) {
+  .dangnhap__content__width {
+    width: 410px;
+  }
+}
 .dangnhap__content__btnSubmit {
   line-height: 50px;
   min-width: 300px;
@@ -1006,6 +1011,11 @@ body {
   font-family: "Mulish SemiBold", sans-serif;
   color: #3C3C3C;
   line-height: 1.5;
+}
+@media (max-width: 959.98px) {
+  .dangnhap__content__desc {
+    text-align: left;
+  }
 }
 .dangnhap__content__txtLink {
   color: #1464F4;

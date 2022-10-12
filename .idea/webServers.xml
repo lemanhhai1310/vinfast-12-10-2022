@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="daf8c04b-59fb-404e-8d94-ed867862bbe4" name="vinfast" url="http://116.118.50.53">
+        <fileTransfer rootFolder="/themes.cathtmlcss.net/2022/10/vinfast" host="116.118.50.53" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

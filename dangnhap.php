@@ -21,10 +21,10 @@
         <div class="dangnhap__content__item-64-30">
             <div class="dangnhap__content__item-48-30">
                 <div class="item__12">
-                    <input class="dangnhap__content__input uk-input uk-form-large uk-width-large" type="text" placeholder="Tên đăng nhập">
+                    <input class="dangnhap__content__input uk-input uk-form-large uk-width-large dangnhap__content__width" type="text" placeholder="Tên đăng nhập">
                 </div>
                 <div class="item__12">
-                    <div class="uk-inline uk-width-large">
+                    <div class="uk-inline uk-width-large dangnhap__content__width">
                         <a class="uk-form-icon uk-form-icon-flip dangnhap__content__iconPass" href="#" uk-icon="icon: link"></a>
                         <input class="dangnhap__content__input uk-input uk-form-large" type="password" placeholder="Mật khẩu">
                     </div>
