@@ -17,6 +17,14 @@
     }
   }
   &__content{
+    &__item-68-54{
+      &:nth-child(n+2){
+        margin-top: 54px;
+        @include media-breakpoint-up('m'){
+          margin-top: 68px;
+        }
+      }
+    }
     &__item-48-30{
       &:nth-child(n+2){
         margin-top: 30px;
@@ -61,8 +69,12 @@
       border-radius: 3px;
       font-size: 16px;
       font-family: $font-Mulish-Bold;
+      &--xacnhan{
+        background: #8A8A8A;
+      }
     }
     &__title{
+      margin: 0;
       font-size: 24px;
       @include media-breakpoint-up('m'){
         font-size: 32px;

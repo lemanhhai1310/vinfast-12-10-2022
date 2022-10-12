@@ -28,6 +28,13 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Mulish Regular";
+  font-display: swap;
+  src: local("Mulish Regular"), url("fonts/Mulish/Mulish-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /**
  * --------------------------------------------------------------------
  * Arial
@@ -278,6 +285,64 @@ body {
 }
 .uk-grid-20 > .uk-grid-margin {
   margin-top: 20px;
+}
+
+@media (min-width: 1600px) {
+  .uk-grid-24-xl {
+    margin-left: -24px !important;
+  }
+  .uk-grid-24-xl > * {
+    padding-left: 24px !important;
+  }
+  .uk-grid-24-xl > .uk-grid-margin {
+    margin-top: 24px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .uk-grid-24-l {
+    margin-left: -24px !important;
+  }
+  .uk-grid-24-l > * {
+    padding-left: 24px !important;
+  }
+  .uk-grid-24-l > .uk-grid-margin {
+    margin-top: 24px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .uk-grid-24-m {
+    margin-left: -24px !important;
+  }
+  .uk-grid-24-m > * {
+    padding-left: 24px !important;
+  }
+  .uk-grid-24-m > .uk-grid-margin {
+    margin-top: 24px !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .uk-grid-24-s {
+    margin-left: -24px !important;
+  }
+  .uk-grid-24-s > * {
+    padding-left: 24px !important;
+  }
+  .uk-grid-24-s > .uk-grid-margin {
+    margin-top: 24px !important;
+  }
+}
+
+.uk-grid-24 {
+  margin-left: -24px;
+}
+.uk-grid-24 > * {
+  padding-left: 24px;
+}
+.uk-grid-24 > .uk-grid-margin {
+  margin-top: 24px;
 }
 
 @media (min-width: 1600px) {
@@ -950,6 +1015,14 @@ body {
     height: 42px;
   }
 }
+.dangnhap__content__item-68-54:nth-child(n+2) {
+  margin-top: 54px;
+}
+@media (min-width: 960px) {
+  .dangnhap__content__item-68-54:nth-child(n+2) {
+    margin-top: 68px;
+  }
+}
 .dangnhap__content__item-48-30:nth-child(n+2) {
   margin-top: 30px;
 }
@@ -995,7 +1068,11 @@ body {
   font-size: 16px;
   font-family: "Mulish Bold", sans-serif;
 }
+.dangnhap__content__btnSubmit--xacnhan {
+  background: #8A8A8A;
+}
 .dangnhap__content__title {
+  margin: 0;
   font-size: 24px;
   color: #3C3C3C;
   line-height: 1.25;
@@ -1049,6 +1126,158 @@ body {
   .dangnhap__footer__txt {
     font-size: 14px;
   }
+}
+
+.xacthuc {
+  padding-bottom: 28px;
+}
+.xacthuc__btnBack {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  line-height: 1.25;
+  font-family: "Mulish Bold", sans-serif;
+  color: #1464F4;
+  padding-left: 32px;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 18L9 12L15 6' stroke='%231464F4' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.xacthuc__box {
+  background: #FFFFFF;
+  /* Shadow 2 */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  padding: 8px 16px;
+}
+@media (min-width: 960px) {
+  .xacthuc__box {
+    padding: 12px 16px;
+  }
+}
+.xacthuc__box__txt {
+  color: #3C3C3C;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Mulish Regular", sans-serif;
+  padding-left: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 18.8333C14.6024 18.8333 18.3334 15.1024 18.3334 10.5C18.3334 5.89763 14.6024 2.16667 10 2.16667C5.39765 2.16667 1.66669 5.89763 1.66669 10.5C1.66669 15.1024 5.39765 18.8333 10 18.8333Z' stroke='%23DC3545' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 7.16667V10.5' stroke='%23DC3545' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 13.8333H10.0083' stroke='%23DC3545' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.xacthuc__box__btn {
+  background: #1464F4;
+  border-radius: 3px;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  font-family: "Mulish Bold", sans-serif;
+  line-height: 49px;
+  padding: 0 16px;
+}
+@media (max-width: 959.98px) {
+  .xacthuc__box__btn {
+    line-height: 54px;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+.xacthuc__step__item {
+  position: relative;
+}
+.xacthuc__step__item:before {
+  position: absolute;
+  right: 100%;
+  top: 10px;
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background: #3C3C3C;
+  opacity: 0;
+  transform-origin: 100% 0;
+  transform: translate(50%, -50%);
+}
+.xacthuc__step__item:nth-child(n+2):before {
+  opacity: 1 !important;
+}
+.xacthuc__step__box1 {
+  position: relative;
+  z-index: 10;
+  font-size: 12px;
+  font-family: "Mulish SemiBold", sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.xacthuc__step__box1.active {
+  background-color: #3C3C3C;
+  color: #3C3C3C;
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.125 3.8125L5.59375 10.3438L2.625 7.375' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.xacthuc__step__box1.inprogress {
+  background-color: #1464F4;
+  color: #FFFFFF;
+}
+.xacthuc__step__txt {
+  color: #3C3C3C;
+  font-family: "Mulish SemiBold", sans-serif;
+  line-height: 1.5;
+  font-size: 12px;
+}
+@media (min-width: 960px) {
+  .xacthuc__step__txt {
+    font-size: 16px;
+  }
+}
+.xacthuc__width {
+  max-width: 851px;
+}
+.xacthuc__card {
+  max-width: 851px;
+  background: #F7F9F9;
+  padding: 16px;
+}
+@media (min-width: 960px) {
+  .xacthuc__card {
+    padding: 30px 110px;
+  }
+}
+.xacthuc__card__title {
+  color: #3C3C3C;
+  font-size: 16px;
+  font-family: "Mulish SemiBold", sans-serif;
+  line-height: 1.5;
+}
+.xacthuc__card__txt {
+  color: #DC3545;
+  font-size: 16px;
+  font-family: "Mulish SemiBold", sans-serif;
+  line-height: 1.5;
+}
+.xacthuc__process {
+  background: #D9E1E2;
+  height: 12px;
+}
+.xacthuc__process__bar {
+  background: #DC3545;
+}
+.xacthuc__process__bar:after {
+  content: attr(data-txt);
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  color: #3C3C3C;
+  font-size: 12px;
+  font-family: "Mulish SemiBold", sans-serif;
+  line-height: 1.5;
+  transform-origin: 100% 0;
+  transform: translate(50%, 0%);
 }
 
 /*# sourceMappingURL=style.css.map */
