@@ -1,7 +1,33 @@
 body {
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Mulish SemiBold", sans-serif;
 }
 
+/**
+ * --------------------------------------------------------------------
+ * Mulish
+ * --------------------------------------------------------------------
+ */
+@font-face {
+  font-family: "Mulish SemiBold";
+  font-display: swap;
+  src: local("Mulish SemiBold"), url("fonts/Mulish/Mulish-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish Light";
+  font-display: swap;
+  src: local("Mulish Light"), url("fonts/Mulish/Mulish-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mulish Bold";
+  font-display: swap;
+  src: local("Mulish Bold"), url("fonts/Mulish/Mulish-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /**
  * --------------------------------------------------------------------
  * Arial
@@ -764,59 +790,73 @@ body {
   margin-top: 50px;
 }
 
+.fz-12 {
+  font-size: 12px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-12 {
+    font-size: calc(12px + 0 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-12 {
+    font-size: 12px !important;
+  }
+}
+
 .fz-14 {
-  font-size: 12.25px !important;
-}
-@media screen and (min-width: 640px) {
-  .fz-14 {
-    font-size: calc(12.25px + 0 * ((100vw - 640px) / 560)) !important;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .fz-14 {
-    font-size: 12.25px !important;
-  }
-}
-
-.fz-15 {
-  font-size: 13.125px !important;
-}
-@media screen and (min-width: 640px) {
-  .fz-15 {
-    font-size: calc(13.125px + 0 * ((100vw - 640px) / 560)) !important;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .fz-15 {
-    font-size: 13.125px !important;
-  }
-}
-
-.fz-16 {
   font-size: 14px !important;
 }
 @media screen and (min-width: 640px) {
-  .fz-16 {
+  .fz-14 {
     font-size: calc(14px + 0 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
-  .fz-16 {
+  .fz-14 {
     font-size: 14px !important;
   }
 }
 
+.fz-15 {
+  font-size: 15px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-15 {
+    font-size: calc(15px + 0 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-15 {
+    font-size: 15px !important;
+  }
+}
+
+.fz-16 {
+  font-size: 16px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-16 {
+    font-size: calc(16px + 0 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-16 {
+    font-size: 16px !important;
+  }
+}
+
 .fz-20 {
-  font-size: 15.75px !important;
+  font-size: 16px !important;
 }
 @media screen and (min-width: 640px) {
   .fz-20 {
-    font-size: calc(15.75px + 1.75 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(16px + 4 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-20 {
-    font-size: 17.5px !important;
+    font-size: 20px !important;
   }
 }
 
@@ -825,12 +865,26 @@ body {
 }
 @media screen and (min-width: 640px) {
   .fz-30 {
-    font-size: calc(21px + 5.25 * ((100vw - 640px) / 560)) !important;
+    font-size: calc(21px + 9 * ((100vw - 640px) / 560)) !important;
   }
 }
 @media screen and (min-width: 1200px) {
   .fz-30 {
-    font-size: 26.25px !important;
+    font-size: 30px !important;
+  }
+}
+
+.fz-32 {
+  font-size: 22.4px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-32 {
+    font-size: calc(22.4px + 9.6 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-32 {
+    font-size: 32px !important;
   }
 }
 
@@ -869,87 +923,122 @@ body {
   overflow: hidden;
 }
 
-.item__120:nth-child(n+2) {
-  margin-top: 120px;
-}
-.item__100:nth-child(n+2) {
-  margin-top: 100px;
-}
-.home__hesinhthai__section .item__100:nth-child(n+2) {
-  margin-top: 40px;
-}
-@media (min-width: 960px) {
-  .home__hesinhthai__section .item__100:nth-child(n+2) {
-    margin-top: 100px;
-  }
-}
-.item__80:nth-child(n+2) {
-  margin-top: 80px;
-}
-.item__60:nth-child(n+2) {
-  margin-top: 60px;
-}
-.home__hesinhthai__section .item__60:nth-child(n+2), .home__quyenloi .item__60:nth-child(n+2) {
-  margin-top: 30px;
-}
-@media (min-width: 960px) {
-  .home__hesinhthai__section .item__60:nth-child(n+2), .home__quyenloi .item__60:nth-child(n+2) {
-    margin-top: 60px;
-  }
-}
-.item__50:nth-child(n+2) {
-  margin-top: 50px;
-}
-.item__43:nth-child(n+2) {
-  margin-top: 43px;
-}
-.home__tinhnang .item__43:nth-child(n+2) {
-  margin-top: 20px;
-}
-@media (min-width: 960px) {
-  .home__tinhnang .item__43:nth-child(n+2) {
-    margin-top: 43px;
-  }
-}
-.item__40:nth-child(n+2) {
-  margin-top: 40px;
-}
 .item__30:nth-child(n+2) {
   margin-top: 30px;
-}
-.footer__top .item__30:nth-child(n+2), .home__banner .item__30:nth-child(n+2), .home__hinhanh .item__30:nth-child(n+2), .home__tinhnang .item__30:nth-child(n+2) {
-  margin-top: 16px;
-}
-@media (min-width: 960px) {
-  .footer__top .item__30:nth-child(n+2), .home__banner .item__30:nth-child(n+2), .home__hinhanh .item__30:nth-child(n+2), .home__tinhnang .item__30:nth-child(n+2) {
-    margin-top: 30px;
-  }
 }
 .item__24:nth-child(n+2) {
   margin-top: 24px;
 }
-.home__quyenloi .item__24:nth-child(n+2) {
-  margin-top: 10px;
-}
-@media (min-width: 960px) {
-  .home__quyenloi .item__24:nth-child(n+2) {
-    margin-top: 24px;
-  }
-}
-.item__20:nth-child(n+2) {
-  margin-top: 20px;
-}
-.item__16:nth-child(n+2) {
-  margin-top: 16px;
-}
-.item__15:nth-child(n+2) {
-  margin-top: 15px;
-}
-.item__10:nth-child(n+2) {
-  margin-top: 10px;
+.item__12:nth-child(n+2) {
+  margin-top: 12px;
 }
 .item__8:nth-child(n+2) {
   margin-top: 8px;
+}
+
+.dangnhap__header {
+  margin-bottom: 14px;
+}
+.dangnhap__header .uk-navbar-item {
+  min-height: 74px;
+}
+.dangnhap__header .uk-logo img {
+  height: 36px;
+}
+@media (min-width: 960px) {
+  .dangnhap__header .uk-logo img {
+    height: 42px;
+  }
+}
+.dangnhap__content__item-48-30:nth-child(n+2) {
+  margin-top: 30px;
+}
+@media (min-width: 960px) {
+  .dangnhap__content__item-48-30:nth-child(n+2) {
+    margin-top: 48px;
+  }
+}
+.dangnhap__content__item-64-30:nth-child(n+2) {
+  margin-top: 30px;
+}
+@media (min-width: 960px) {
+  .dangnhap__content__item-64-30:nth-child(n+2) {
+    margin-top: 64px;
+  }
+}
+.dangnhap__content__iconPass {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.7616 10.7608L17.7617 10.7607L18.0536 10.9105C18.1489 10.715 18.1487 10.4844 18.0534 10.2888L18.0523 10.2866L18.05 10.2819L18.0423 10.2664C18.0358 10.2536 18.0267 10.2355 18.0149 10.2127C17.9914 10.1671 17.9572 10.1021 17.9125 10.0207C17.8233 9.85798 17.6919 9.62873 17.5196 9.35509C17.1758 8.80914 16.6648 8.07948 15.9954 7.34716C14.6689 5.89604 12.6404 4.3499 10.0001 4.3499C7.35975 4.3499 5.33118 5.89604 4.00476 7.34716C3.33537 8.07948 2.82432 8.80914 2.48054 9.35509C2.30823 9.62873 2.17684 9.85798 2.08759 10.0207C2.04293 10.1021 2.00875 10.1671 1.9852 10.2127C1.97342 10.2355 1.96429 10.2536 1.95783 10.2664L1.95015 10.2819L1.94781 10.2866L1.94702 10.2882C1.9469 10.2885 1.94648 10.2893 2.55209 10.5999L1.94648 10.2893C1.85117 10.4848 1.85117 10.715 1.94648 10.9105L1.94648 10.9105C1.94643 10.9103 1.94741 10.9098 2.02207 10.8716C2.09765 10.8329 2.24873 10.7555 2.55068 10.6006L1.94648 10.9105L1.94781 10.9132L1.95015 10.9179L1.95783 10.9334C1.96429 10.9462 1.97342 10.9643 1.9852 10.9871C2.00875 11.0327 2.04293 11.0977 2.08759 11.1791C2.17684 11.3418 2.30823 11.5711 2.48054 11.8447C2.82432 12.3907 3.33537 13.1203 4.00476 13.8526C5.33118 15.3038 7.35975 16.8499 10.0001 16.8499C12.6404 16.8499 14.6689 15.3038 15.9954 13.8526C16.6648 13.1203 17.1758 12.3907 17.5196 11.8447C17.6919 11.5711 17.8233 11.3418 17.9125 11.1791C17.9572 11.0977 17.9914 11.0327 18.0149 10.9871C18.0267 10.9643 18.0358 10.9462 18.0423 10.9334L18.05 10.9179L18.0523 10.9132L18.0531 10.9116C18.0532 10.9114 18.0535 10.9108 17.7616 10.7608ZM18.0534 10.2888C18.0535 10.289 18.0536 10.2892 17.7617 10.439L17.7615 10.4388L18.0534 10.2888ZM8.81944 10.5999C8.81944 9.83284 9.44127 9.21101 10.2083 9.21101C10.9754 9.21101 11.5972 9.83284 11.5972 10.5999C11.5972 11.367 10.9754 11.9888 10.2083 11.9888C9.44127 11.9888 8.81944 11.367 8.81944 10.5999ZM10.2083 7.82212C8.67421 7.82212 7.43056 9.06577 7.43056 10.5999C7.43056 12.134 8.67421 13.3777 10.2083 13.3777C11.7425 13.3777 12.9861 12.134 12.9861 10.5999C12.9861 9.06577 11.7425 7.82212 10.2083 7.82212Z' fill='%233C3C3C'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dangnhap__content__iconPass svg {
+  opacity: 0;
+}
+.dangnhap__content__input {
+  height: 66px !important;
+  border-color: #D9E1E2;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: "Mulish SemiBold", sans-serif;
+  color: #3C3C3C;
+}
+.dangnhap__content__btnSubmit {
+  line-height: 50px;
+  min-width: 300px;
+  background: #1464F4;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: "Mulish Bold", sans-serif;
+}
+.dangnhap__content__title {
+  font-size: 24px;
+  color: #3C3C3C;
+  line-height: 1.25;
+  font-family: "Mulish Light", sans-serif;
+}
+@media (min-width: 960px) {
+  .dangnhap__content__title {
+    font-size: 32px;
+  }
+}
+.dangnhap__content__desc {
+  font-size: 16px;
+  font-family: "Mulish SemiBold", sans-serif;
+  color: #3C3C3C;
+  line-height: 1.5;
+}
+.dangnhap__content__txtLink {
+  color: #1464F4;
+  line-height: 1.5;
+  font-family: "Mulish SemiBold", sans-serif;
+  font-size: 14px;
+}
+.dangnhap__footer {
+  background: #F0F3F3;
+}
+.dangnhap__footer__navItem {
+  min-height: 42px;
+}
+@media (min-width: 960px) {
+  .dangnhap__footer__navItem {
+    min-height: 58px;
+  }
+}
+@media (max-width: 959.98px) {
+  .dangnhap__footer__navbarRight {
+    margin-right: auto;
+  }
+}
+.dangnhap__footer__txt {
+  color: #3C3C3C;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Mulish SemiBold", sans-serif;
+}
+@media (min-width: 960px) {
+  .dangnhap__footer__txt {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

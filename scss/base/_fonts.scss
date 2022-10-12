@@ -1,5 +1,31 @@
 /**
  * --------------------------------------------------------------------
+ * Mulish
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'Mulish SemiBold';
+  font-display: swap;
+  src:local('Mulish SemiBold'), url('fonts/Mulish/Mulish-SemiBold.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Mulish Light';
+  font-display: swap;
+  src:local('Mulish Light'), url('fonts/Mulish/Mulish-Light.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Mulish Bold';
+  font-display: swap;
+  src:local('Mulish Bold'), url('fonts/Mulish/Mulish-Bold.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
  * Arial
  * --------------------------------------------------------------------
  */

@@ -1,10 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Đăng nhập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1665549162">
 
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1665549162"></script>
+</head>
+<body class="">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--app-->
+<div id="app" class="uk-height-viewport uk-flex uk-flex-column uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <nav class="dangnhap__header uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-center">
+            <a class="uk-navbar-item uk-logo" href="#"><img src="images/logo-3d.png" alt=""></a>
+            <div class="uk-navbar-center-right">
+                <div class="uk-navbar-item"></div>
+            </div>
+        </div>
+    </nav><div class="uk-flex-auto uk-text-center">
+    <div class="uk-container">
+        <div class="dangnhap__content__item-64-30">
+            <div class="item__30">
+                <div class="item__8">
+                    <h1 class="uk-h1 dangnhap__content__title">Đăng nhập</h1>
+                </div>
+                <div class="item__8">
+                    <div class="dangnhap__content__desc">Để ký hợp đồng điện tử, Quý khách vui lòng đăng nhập với tên đăng nhập và mật khẩu đã đươc VinFast gửi qua
+                        <br class="uk-visible@m"> email của Quý khách.</div>
+                </div>
+            </div>
+            <div class="item__30">
+                <a href="" class="dangnhap__content__txtLink">Xem hướng dẫn</a>
+            </div>
+        </div>
+
+        <div class="dangnhap__content__item-64-30">
+            <div class="dangnhap__content__item-48-30">
+                <div class="item__12">
+                    <input class="dangnhap__content__input uk-input uk-form-large uk-width-large" type="text" placeholder="Tên đăng nhập">
+                </div>
+                <div class="item__12">
+                    <div class="uk-inline uk-width-large">
+                        <a class="uk-form-icon uk-form-icon-flip dangnhap__content__iconPass" href="#" uk-icon="icon: link"></a>
+                        <input class="dangnhap__content__input uk-input uk-form-large" type="password" placeholder="Mật khẩu">
+                    </div>
+                </div>
+            </div>
+            <div class="dangnhap__content__item-48-30">
+                <div class="item__24">
+                    <button type="button" class="dangnhap__content__btnSubmit uk-button uk-button-primary uk-button-large">đăng nhập</button>
+                </div>
+                <div class="item__24">
+                    <a href="" class="dangnhap__content__txtLink">Change language to English</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="dangnhap__footer">
+        <div class="uk-container">
+            <nav class="dangnhap__footer__navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                <div class="uk-navbar-left uk-visible@m">
+                    <a href="" class="uk-navbar-item uk-logo dangnhap__footer__navItem"><img src="images/logo-2d-footer.png" alt=""></a>
+                </div>
+
+                <div class="uk-navbar-right dangnhap__footer__navbarRight">
+                    <div class="uk-navbar-item dangnhap__footer__navItem">
+                        <div class="dangnhap__footer__txt">VinFast. All rights reserved. © Copyright 2022</div>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+</div>
+<!--/app-->
 </body>
 </html>

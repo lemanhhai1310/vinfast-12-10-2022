@@ -22,3 +22,11 @@
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-flex uk-flex-column uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<nav class="dangnhap__header uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="#"><img src="images/logo-3d.png" alt=""></a>
+        <div class="uk-navbar-center-right">
+            <div class="uk-navbar-item"></div>
+        </div>
+    </div>
+</nav>

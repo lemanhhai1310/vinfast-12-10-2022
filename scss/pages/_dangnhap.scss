@@ -1,7 +1,113 @@
 .dangnhap{
+  &__header{
+    margin-bottom: 14px;
+    .uk-navbar-item{
+      min-height: 74px;
+      @include media-breakpoint-up('m'){
+
+      }
+    }
+    .uk-logo{
+      img{
+        height: 36px;
+        @include media-breakpoint-up('m'){
+          height: 42px;
+        }
+      }
+    }
+  }
+  &__content{
+    &__item-48-30{
+      &:nth-child(n+2){
+        margin-top: 30px;
+        @include media-breakpoint-up('m'){
+          margin-top: 48px;
+        }
+      }
+    }
+    &__item-64-30{
+      &:nth-child(n+2){
+        margin-top: 30px;
+        @include media-breakpoint-up('m'){
+          margin-top: 64px;
+        }
+      }
+    }
+    &__iconPass{
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.7616 10.7608L17.7617 10.7607L18.0536 10.9105C18.1489 10.715 18.1487 10.4844 18.0534 10.2888L18.0523 10.2866L18.05 10.2819L18.0423 10.2664C18.0358 10.2536 18.0267 10.2355 18.0149 10.2127C17.9914 10.1671 17.9572 10.1021 17.9125 10.0207C17.8233 9.85798 17.6919 9.62873 17.5196 9.35509C17.1758 8.80914 16.6648 8.07948 15.9954 7.34716C14.6689 5.89604 12.6404 4.3499 10.0001 4.3499C7.35975 4.3499 5.33118 5.89604 4.00476 7.34716C3.33537 8.07948 2.82432 8.80914 2.48054 9.35509C2.30823 9.62873 2.17684 9.85798 2.08759 10.0207C2.04293 10.1021 2.00875 10.1671 1.9852 10.2127C1.97342 10.2355 1.96429 10.2536 1.95783 10.2664L1.95015 10.2819L1.94781 10.2866L1.94702 10.2882C1.9469 10.2885 1.94648 10.2893 2.55209 10.5999L1.94648 10.2893C1.85117 10.4848 1.85117 10.715 1.94648 10.9105L1.94648 10.9105C1.94643 10.9103 1.94741 10.9098 2.02207 10.8716C2.09765 10.8329 2.24873 10.7555 2.55068 10.6006L1.94648 10.9105L1.94781 10.9132L1.95015 10.9179L1.95783 10.9334C1.96429 10.9462 1.97342 10.9643 1.9852 10.9871C2.00875 11.0327 2.04293 11.0977 2.08759 11.1791C2.17684 11.3418 2.30823 11.5711 2.48054 11.8447C2.82432 12.3907 3.33537 13.1203 4.00476 13.8526C5.33118 15.3038 7.35975 16.8499 10.0001 16.8499C12.6404 16.8499 14.6689 15.3038 15.9954 13.8526C16.6648 13.1203 17.1758 12.3907 17.5196 11.8447C17.6919 11.5711 17.8233 11.3418 17.9125 11.1791C17.9572 11.0977 17.9914 11.0327 18.0149 10.9871C18.0267 10.9643 18.0358 10.9462 18.0423 10.9334L18.05 10.9179L18.0523 10.9132L18.0531 10.9116C18.0532 10.9114 18.0535 10.9108 17.7616 10.7608ZM18.0534 10.2888C18.0535 10.289 18.0536 10.2892 17.7617 10.439L17.7615 10.4388L18.0534 10.2888ZM8.81944 10.5999C8.81944 9.83284 9.44127 9.21101 10.2083 9.21101C10.9754 9.21101 11.5972 9.83284 11.5972 10.5999C11.5972 11.367 10.9754 11.9888 10.2083 11.9888C9.44127 11.9888 8.81944 11.367 8.81944 10.5999ZM10.2083 7.82212C8.67421 7.82212 7.43056 9.06577 7.43056 10.5999C7.43056 12.134 8.67421 13.3777 10.2083 13.3777C11.7425 13.3777 12.9861 12.134 12.9861 10.5999C12.9861 9.06577 11.7425 7.82212 10.2083 7.82212Z' fill='%233C3C3C'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+      svg{
+        opacity: 0;
+      }
+    }
+    &__input{
+      height: 66px !important;
+      border-color: #D9E1E2;
+      border-radius: 3px;
+      font-size: 16px;
+      font-family: $font-Mulish-SemiBold;
+      color: #3C3C3C;
+    }
+    &__btnSubmit{
+      line-height: (52px - 2px);
+      min-width: 300px;
+      background: #1464F4;
+      border-radius: 3px;
+      font-size: 16px;
+      font-family: $font-Mulish-Bold;
+    }
+    &__title{
+      font-size: 24px;
+      @include media-breakpoint-up('m'){
+        font-size: 32px;
+      }
+      color: #3C3C3C;
+      line-height: (30/24);
+      font-family: $font-Mulish-Light;
+    }
+    &__desc{
+      font-size: 16px;
+      font-family: $font-Mulish-SemiBold;
+      color: #3C3C3C;
+      line-height: 1.5;
+    }
+    &__txtLink{
+      color: #1464F4;
+      line-height: 1.5;
+      font-family: $font-Mulish-SemiBold;
+      font-size: 14px;
+    }
+  }
   &__footer{
+    background: #F0F3F3;
+    .uk-logo{
+      img{
+
+      }
+    }
     &__navbar{
 
+    }
+    &__navItem{
+      min-height: 42px;
+      @include media-breakpoint-up('m'){
+        min-height: 58px;
+      }
+    }
+    &__navbarRight{
+      @include media-breakpoint-down('s'){
+        margin-right: auto;
+      }
+    }
+    &__txt{
+      color: #3C3C3C;
+      font-size: 12px;
+      @include media-breakpoint-up('m'){
+        font-size: 14px;
+      }
+      line-height: 1.5;
+      font-family: $font-Mulish-SemiBold;
     }
   }
 }
