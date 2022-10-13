@@ -149,3 +149,9 @@
     }
   }
 }
+#webcam{
+  video{
+    height: inherit !important;
+    transform: scaleX(1) scaleY(1) !important;
+  }
+}

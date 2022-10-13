@@ -1280,4 +1280,9 @@ body {
   transform: translate(50%, 0%);
 }
 
+#webcam video {
+  height: inherit !important;
+  transform: scaleX(1) scaleY(1) !important;
+}
+
 /*# sourceMappingURL=style.css.map */

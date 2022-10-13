@@ -83,7 +83,11 @@
                                 <img class="uk-width-1-1" src="images/cmt.png" alt="">
                             </div>
                             <div>
-                                <img class="uk-width-1-1" src="images/anh-chup.png" alt="">
+                                <div id="webcam">
+                                    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" autoplay="autoplay" playsinline="playsinline" style="width: 1080px; height: 810px; transform-origin: 0px 0px; transform: scaleX(0.277778) scaleY(0.277778);"></video>
+                                </div>
+<!--                                <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" controls playsinline uk-video></video>-->
+<!--                                <img class="uk-width-1-1" src="images/anh-chup.png" alt="">-->
                             </div>
                         </div>
                     </div>
