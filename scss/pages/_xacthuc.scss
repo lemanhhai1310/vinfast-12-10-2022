@@ -139,7 +139,7 @@
     max-width: 851px;
   }
   &__card{
-    max-width: 851px;
+    @extend .xacthuc__width;
     background: #F7F9F9;
     padding: 16px;
     @include media-breakpoint-up('m'){
@@ -150,6 +150,9 @@
       font-size: 16px;
       font-family: $font-Mulish-SemiBold;
       line-height: 1.5;
+      .dieukhoan__modal__footer &{
+        color: #FFFFFF;
+      }
     }
     &__txt{
       color: #DC3545;

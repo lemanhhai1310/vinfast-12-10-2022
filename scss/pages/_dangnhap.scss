@@ -84,6 +84,9 @@
         @include media-breakpoint-down('xs'){
           width: 100%;
         }
+        .dieukhoan__modal__footer &{
+          border-color: #FFFFFF;
+        }
       }
     }
     &__title{
