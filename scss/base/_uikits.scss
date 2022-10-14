@@ -1,0 +1,31 @@
+.uk{
+  &-modal{
+    background: rgba(#3C3C3C,.8);
+  }
+  &-height{
+    &-min{
+      &-small{
+        min-height: 150px;
+      }
+      &-medium{
+        min-height: 300px;
+      }
+      &-large{
+        min-height: 450px;
+      }
+    }
+  }
+  &-width{
+    &-max{
+      &-small{
+        max-width: 150px;
+      }
+      &-medium{
+        max-width: 300px;
+      }
+      &-large{
+        max-width: 450px;
+      }
+    }
+  }
+}

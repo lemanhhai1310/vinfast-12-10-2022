@@ -50,15 +50,16 @@
   &__step{
     &__item{
       position: relative;
+      $x:13px;
       &:before{
         position: absolute;
-        right: 100%;
+        right: calc(100% - 0px);
         top: 10px;
         content: "";
         display: flex;
-        width: 100%;
+        width: calc(100% - #{$x});
         height: 2px;
-        background: #3C3C3C;
+        background: #F0F3F3;
         opacity: 0;
         transform-origin: 100% 0;
         transform: translate(50%,-50%);
@@ -66,6 +67,12 @@
       &:nth-child(n+2){
         &:before{
           opacity: 1 !important;
+        }
+      }
+      &.active,
+      &.inprogress{
+        &:before{
+          background: #3C3C3C;
         }
       }
     }
@@ -84,12 +91,28 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      background: #8A8A8A;
+      color: #FFFFFF;
       &.active{
-        background-color: #3C3C3C;
-        color: #3C3C3C;
-        background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.125 3.8125L5.59375 10.3438L2.625 7.375' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-        background-repeat: no-repeat;
-        background-position: center;
+        //background-color: #3C3C3C;
+        //color: #3C3C3C;
+        //background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.125 3.8125L5.59375 10.3438L2.625 7.375' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        //background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.8876 2C6.42685 2 2 6.42685 2 11.8876C2 17.3484 6.42685 21.7753 11.8876 21.7753C17.3484 21.7753 21.7753 17.3484 21.7753 11.8876C21.7753 10.6173 21.5357 9.40299 21.0993 8.2873L13.7944 15.5922C12.7413 16.6453 11.0339 16.6453 9.98084 15.5922L7.28421 12.8956C6.23111 11.8425 6.23111 10.1351 7.28421 9.08196C8.33731 8.02886 10.0447 8.02886 11.0978 9.08196L11.8876 9.87178L17.7987 3.9607C16.1499 2.72917 14.1039 2 11.8876 2Z' fill='black'/%3E%3Cpath d='M21.6709 5.49113C22.1097 5.05234 22.1097 4.34092 21.6709 3.90213C21.2321 3.46334 20.5207 3.46334 20.0819 3.90213L11.8876 12.0964L9.98551 10.1943C9.54672 9.75547 8.8353 9.75547 8.39651 10.1943C7.95772 10.6331 7.95772 11.3445 8.39651 11.7833L11.0931 14.4799C11.5319 14.9187 12.2434 14.9187 12.6821 14.4799L21.6709 5.49113Z' fill='black'/%3E%3C/svg%3E%0A");
+        position: relative;
+        background: transparent;
+        &:before{
+          content: "";
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          display: flex;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.8876 2C6.42685 2 2 6.42685 2 11.8876C2 17.3484 6.42685 21.7753 11.8876 21.7753C17.3484 21.7753 21.7753 17.3484 21.7753 11.8876C21.7753 10.6173 21.5357 9.40299 21.0993 8.2873L13.7944 15.5922C12.7413 16.6453 11.0339 16.6453 9.98084 15.5922L7.28421 12.8956C6.23111 11.8425 6.23111 10.1351 7.28421 9.08196C8.33731 8.02886 10.0447 8.02886 11.0978 9.08196L11.8876 9.87178L17.7987 3.9607C16.1499 2.72917 14.1039 2 11.8876 2Z' fill='black'/%3E%3Cpath d='M21.6709 5.49113C22.1097 5.05234 22.1097 4.34092 21.6709 3.90213C21.2321 3.46334 20.5207 3.46334 20.0819 3.90213L11.8876 12.0964L9.98551 10.1943C9.54672 9.75547 8.8353 9.75547 8.39651 10.1943C7.95772 10.6331 7.95772 11.3445 8.39651 11.7833L11.0931 14.4799C11.5319 14.9187 12.2434 14.9187 12.6821 14.4799L21.6709 5.49113Z' fill='black'/%3E%3C/svg%3E%0A");
+        }
       }
       &.inprogress{
         background-color: #1464F4;
@@ -97,10 +120,16 @@
       }
     }
     &__txt{
-      color: #3C3C3C;
+      color: #8A8A8A;
       font-family: $font-Mulish-SemiBold;
       line-height: 1.5;
       font-size: 12px;
+      .inprogress &{
+        color: #1464F4;
+      }
+      .active &{
+        color: #3C3C3C;
+      }
       @include media-breakpoint-up('m'){
         font-size: 16px;
       }
@@ -127,6 +156,9 @@
       font-size: 16px;
       font-family: $font-Mulish-SemiBold;
       line-height: 1.5;
+      &--c1{
+        font-family: $font-Mulish-Regular;
+      }
     }
   }
   &__process{
